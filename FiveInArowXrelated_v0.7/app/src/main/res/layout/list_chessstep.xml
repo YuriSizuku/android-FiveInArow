@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/list_item"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="123"
+        android:id="@+id/text_num"
+        android:background="#ddff02"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/text_pos"
+        android:background="#06fbff"
+        android:text="pos"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView"
+        android:scaleType="center"
+        android:src="@drawable/chess_black"
+        android:background="#ff00dd" />
+
+</LinearLayout>

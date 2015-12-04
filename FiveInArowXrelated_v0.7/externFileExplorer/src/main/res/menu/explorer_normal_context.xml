@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/fileExplorer_normal_Copy"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="复制"/>
+    <item
+        android:id="@+id/fileExplorer_normal_Rename"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="改名"/>
+    <item
+        android:id="@+id/fileExplorer_normal_Delete"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="删除"/>
+
+     <item
+        android:id="@+id/fileExplorer_normal_Cut"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="移动"/>
+     
+</menu>

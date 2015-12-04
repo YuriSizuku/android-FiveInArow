@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="A(0~255)"
+            android:id="@+id/textView2"
+            android:textColor="#f6fcff"
+            android:gravity="center" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seek_a"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_a"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:gravity="left|center_vertical|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R(0~255)"
+            android:id="@+id/textView3"
+            android:textColor="#f6fcff"
+            android:gravity="center" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seek_r"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_r"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:gravity="left|center_vertical|center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="G(0~255)"
+            android:id="@+id/textView4"
+            android:textColor="#f6fcff"
+            android:gravity="center" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seek_g"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_g"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:gravity="left|center_vertical|center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="B(0~255)"
+            android:id="@+id/textView5"
+            android:textColor="#f6fcff"
+            android:gravity="center" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seek_b"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_b"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_colorargb"
+            android:text="#ffaabbcc"
+            android:textColor="#f6fcff"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_col"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:id="@+id/button_cancel"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/confirm"
+            android:id="@+id/button_confirm"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
