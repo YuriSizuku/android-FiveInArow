@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/fileExplorer_singleFileChoice_OK"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="确定"/>
+     <item
+        android:id="@+id/fileExplorer_singleFileChoice_Cancel"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="返回"/>
+
+</menu>

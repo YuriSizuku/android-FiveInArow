@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 用于给圆角边框的CornerListView控件添加自定义的属性 -->
+    <declare-styleable name="cornerList">   
+        <attr name="showArrow" format="boolean" />   
+    </declare-styleable>   
+    <!-- 用于给SelectableRelativeLayout的添加自定义的属性 -->
+    <declare-styleable name="selectableRelativeLayout">   
+        <attr name="selectedBackground" format="color" />   
+    </declare-styleable> 
+    
+</resources>

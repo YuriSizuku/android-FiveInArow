@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.edu.bit.cs.ui.SelectableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jxl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/general_list_RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    jxl:selectedBackground="@android:color/darker_gray"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <ImageView
+        android:id="@+id/fileExplorer_list_imageFolder"
+        android:paddingTop="4dip"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/folder" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/fileExplorer_list_tvFolderName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     
+        android:layout_toRightOf="@id/fileExplorer_list_imageFolder"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="4dip"
+        android:text="文件夹名字"
+        android:textSize="16sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/fileExplorer_list_tvFolderDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileExplorer_list_tvFolderName"
+        android:layout_toRightOf="@id/fileExplorer_list_imageFolder"
+        android:layout_marginLeft="4dip"
+        android:textSize="14sp"
+        android:text="文件夹描述" >
+    </TextView>
+
+</cn.edu.bit.cs.ui.SelectableRelativeLayout>

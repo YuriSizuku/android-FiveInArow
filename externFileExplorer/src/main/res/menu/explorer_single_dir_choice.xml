@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+       
+    <item
+        android:id="@+id/fileExplorer_singleDirChoice_newDir"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="新建文件夹"/>
+    
+
+</menu>
