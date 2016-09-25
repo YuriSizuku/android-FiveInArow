@@ -10,55 +10,62 @@ This is a five_in_a_row project with ai [kuon](https://github.com/YuriSizuku/Fiv
 * Testing environment: s4_i9508_4.4.2, NOX_v2.3.0.0_4.4.2
 
 ### Structures:
->JAVA(com.devseed.fiveinarow):
->>activity
->>>MainActivity.java	    
->>>NetWorkActivity.java	     
->>>ConfigActivity.java	     
->>>DbViewActivity.java					
->>>ChessGameActivity.java					
->>>AboutActivity.java						
->>adapter
->>>ChessStepAdapter.java					
->>>Config2Adapter.java					
->>>...
->>data
->>>AppValues.java　　　　　//preference
->>>ChessIO.java	　　　　　//IO save,load
->>dialog	
->>>ColorDialog.java			
->>>FileDialogView.java		
->>fragment
->>>ConfigFragment.java		
->>>Config1Fragment.java
->>>Config2Fragment.java
->>>Config3Fragment.java
->>>SteplogFragment.java	　//chess stack view
->>view
->>>ChessBoardView.java	　//draw board and chesses
->>ChessKernel.java        //chess kernel functions
->JNI：
->>//head files
->>Ai_kuon.h
->>Ai_hitagi.h
->>JniFunc.h
->>stdFunc.h
->>stdValue.h
->>//auto generate
->>com_devseed_fiveinarow_ChessKernel.h
->>com_devseed_fiveinarow_ChessKernel_ChessStep.h
->>com_devseed_fiveinarow_ChessKernel_StepNode.h
->>//ai functions
->>Ai__kuon.cpp　　　　　//game trees, alpha-beta pruning tree
->>Ai_hitagi.cpp 　　　　//reinformentce learning, ann,bp-td
->>JniFunc.cpp          //jni interfaces
->>stdFunc.cpp          //standrad data structures
->EXTERNLIB
->>externAndroidLibrary          //file manager lib
->>externAndroidFileExplorer     //file manager interface
+>JAVA(com.devseed.fiveinarow):  
+>>activity  
+>>>MainActivity.java  
+>>>NetWorkActivity.java  
+>>>ConfigActivity.java  
+>>>DbViewActivity.java  
+>>>ChessGameActivity.java  
+>>>AboutActivity.java  
+>  
+>>adapter  
+>>>ChessStepAdapter.java  
+>>>Config2Adapter.java  
+>  
+>>data  
+>>>AppValues.java     //preference  
+>>>ChessIO.java     //IO save,load  
+>  
+>>dialog  
+>>>ColorDialog.java  
+>>>FileDialogView.java  
+>  
+>>fragment  
+>>>ConfigFragment.java  
+>>>Config1Fragment.java  
+>>>Config2Fragment.java  
+>>>Config3Fragment.java  
+>>>SteplogFragment.java     //chess stack view  
+>  
+>>view  
+>>>ChessBoardView.java     //draw board and chesses  
+>  
+>>ChessKernel.java     //chess kernel functions  
+>  
+>JNI  
+>>//head files  
+>>Ai_kuon.h  
+>>Ai_hitagi.h  
+>>JniFunc.h  
+>>stdFunc.h  
+>>stdValue.h  
+>>//auto generate  
+>>com_devseed_fiveinarow_ChessKernel.h  
+>>com_devseed_fiveinarow_ChessKernel_ChessStep.h  
+>>com_devseed_fiveinarow_ChessKernel_StepNode.h  
+>>//ai functions  
+>>Ai__kuon.cpp     //game trees, alpha-beta pruning tree  
+>>Ai_hitagi.cpp     //reinformentce learning, ann,bp-td  
+>>JniFunc.cpp     //jni interfaces  
+>>stdFunc.cpp     //standrad data structures  
+>  
+>EXTERNLIB  
+>>externAndroidLibrary     //file manager lib  
+>>externAndroidFileExplorer     //file manager interface  
 
 ### Fuctions:
-* see steplog in the left
+* see steplog in the left 
 * view the step on the chess
 * save and load the chessboard(change the path)
 * rollback or back to a certain step
