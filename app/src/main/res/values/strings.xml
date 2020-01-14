@@ -1,7 +1,7 @@
 <resources>
 <!--TODO:各种系统变量-->
     <string name="app_name">FiveInArowXrelated</string>
-    <string name="app_ver" translatable="false">0.7</string>
+    <string name="app_ver" translatable="false">0.7.1</string>
     <string name="steplog_ext" translatable="false">.cbs</string>
     <string name="steplog_path" translatable="false">saves</string>
     <string name="appinner_name" translatable="false">fiarx</string>

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.devseed.fiveinarow.fragment.ConfigFragment"
-    android:background="@color/accent_material_light">
+    android:background="@color/selector_menu">
 
     <!-- TODO: Update blank fragment layout -->
 

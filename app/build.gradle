@@ -1,38 +1,62 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 26
     defaultConfig {
         ndk {
             moduleName "AiKuon"
-            ldLibs "log", "z", "m" //链接时使用到的库，对应LOCAL_LDLIBS
-            abiFilters "armeabi", "armeabi-v7a", "x86"
+            ldLibs "log", "z", "m" // 链接时使用到的库，对应LOCAL_LDLIBS
+            abiFilters "arm64-v8a", "armeabi-v7a", "x86"
         }
         applicationId "com.devseed.fiveinarow"
-        minSdkVersion 15
-        targetSdkVersion 15
+        minSdkVersion 21
+        targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "0.7.1"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            sourceSets {
+                main {
+                    jniLibs.srcDirs('build\\intermediates\\merged_native_libs\\release\\out\\lib')
+                }
+            }
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
         }
         debug {
             debuggable true
             jniDebuggable true
+            sourceSets {
+                main {
+                    jniLibs.srcDirs('build\\intermediates\\merged_native_libs\\debug\\ou\\lib' )
+                }
+            }
         }
     }
     productFlavors {
     }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //在这里修改apk文件名，引号内的字符串都可以随便定义
+                //variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/bin")
+                outputFileName = "FiveInArow_Xrelated-v${variant.versionName}.apk"
+            }
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':externAndroidLibrary')
-    compile project(':externFileExplorer')
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:support-v4:23.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':externAndroidLibrary')
+    implementation project(':externFileExplorer')
 }

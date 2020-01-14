@@ -21,7 +21,6 @@ import java.util.HashMap;
 
 import cn.edu.bit.cs.myfileexplorer.model.ExplorerMode;
 
-import static android.support.v4.app.ActivityCompat.startActivityForResult;
 
 /**
  * Created by misaki on 2015/11/30.

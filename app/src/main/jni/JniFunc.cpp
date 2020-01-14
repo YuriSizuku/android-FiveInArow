@@ -15,7 +15,7 @@ void jcb2ccb(JNIEnv *env, jobject obj,
     for(i=0;i<row;i++)
     {
         jarray rowarr=(jarray)env->GetObjectArrayElement(jcb,i);
-        jchar *coldata=env->GetCharArrayElements((jcharArray)rowarr,false);
+        jchar *coldata=env->GetCharArrayElements((jcharArray)rowarr,NULL);
         for(j=0;j<column;j++)
             ccb[i][j]=coldata[j];
         env->ReleaseCharArrayElements((jcharArray)rowarr,coldata,0);
